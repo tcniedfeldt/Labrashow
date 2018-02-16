@@ -11,12 +11,11 @@ $(document).ready(function() {
                         success : function(json) {
                                 console.log(json);
 
-                                var results = "";
-                                //results += '<h2>Answer to Query: ' + value + '</h2>';
-                                //for (var i=0; i < json.items.length; i++) {
-                                //}
+				var results = "";
+				results += "<h3>" + json.title + "</h3>";
+				results += '<img src="' + json.poster_path + '"/>';
 
-                                $("#results").html();
+				$("#results").html();
                         }
                 });
         });
