@@ -3,7 +3,7 @@ $(document).ready(function() {
                 e.preventDefault();
 		console.log("Roulette Begun!\n");
 
-		var movie = Math.floor(Math.random() * 1000) + 1;
+		var movie = Math.floor(Math.random() * 1000) + 2;
                 var myurl="https://api.themoviedb.org/3/movie/" + movie + "?api_key=c59173680a889c0419dae6d8320bd867";
                 $.ajax({
                         url : myurl,
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 				var results = "";
 				results += '<h3>' + json.title + '</h3>';
-				results += '<img src=http://www.tmdb.org"' + json.poster_path + '"/>';
+				results += '<img src="https://image.tmdb.org/t/p/w150' + json.poster_path + '"/>';
 				results += '<p>' + json.tagline + '</p>';
 				//overview
 				//rating
