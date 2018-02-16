@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 				var results = "";
 				results += "<h3>" + json.title + "</h3>";
-				results += '<img src=http://www.themoviedb.org"' + json.poster_path + '"/>';
+				results += '<img src=http://www.themoviedb.org/"' + json.poster_path + '"/>';
 
 				$("#results").html(results);
                         }
