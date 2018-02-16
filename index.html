@@ -5,6 +5,7 @@
     <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
     <title>Labrashow</title>
 
+    <!--The styles.css sheet would not load on the server no matter what we tried-->
     <style>
       .results {
         display: grid;
@@ -18,11 +19,15 @@
       .poster_image {
         grid-column-start: 1;
         grid-column-end: 2;
+        position: absolute;
+        right: 0px;
       }
 
       .description {
         grid-column-start: 2;
         grid-column-end: 3;
+        position: absolute;
+        left: 0px;
       }
     </style>
 
