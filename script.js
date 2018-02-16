@@ -3,7 +3,7 @@ $(document).ready(function() {
                 e.preventDefault();
 		console.log("Roulette Begun!\n");
 
-		var movie = Math.floor(Math.random() * 500000) + 2;
+		var movie = Math.floor(Math.random() * 1000) + 2;
                 var myurl="https://api.themoviedb.org/3/movie/" + movie + "?api_key=c59173680a889c0419dae6d8320bd867";
                 $.ajax({
                         url : myurl,
