@@ -1,6 +1,6 @@
 $(document).ready(function() {
         $("#movieSubmit").click(function(e) {
-                //e.preventDefault();
+                e.preventDefault();
 		console.log("Roulette Begun!\n");
 
                 var myurl="https://api.themoviedb.org/3/movie/550?api_key=c59173680a889c0419dae6d8320bd867";
