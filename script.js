@@ -12,8 +12,11 @@ $(document).ready(function() {
                                 console.log(json);
 
 				var results = "";
-				results += "<h3>" + json.title + "</h3>";
-				results += '<img src=http://www.themoviedb.org/"' + json.poster_path + '"/>';
+				results += '<h3>' + json.title + '</h3>';
+				results += '<img src=http://www.tmdb.org"' + json.poster_path + '"/>';
+				results += '<p>' + json.tagline + '</p>';
+				//overview
+				//rating
 
 				$("#results").html(results);
                         }
