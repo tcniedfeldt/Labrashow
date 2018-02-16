@@ -12,8 +12,8 @@ $(document).ready(function() {
                                 console.log(json);
 
 				var results = "";
-				results += '<img src="https://image.tmdb.org/t/p/w154' + json.poster_path + '"/>';
-				results += '<h3>' + json.title + '</h3>';
+				results += '<div class="poster_image"><img src="https://image.tmdb.org/t/p/w154' + json.poster_path + '"/></div>';
+				results += '<div class="description"><h3>' + json.title + '</h3>';
 				results += '<p>' + json.tagline + '</p>';
 
 				//Genres
@@ -25,7 +25,7 @@ $(document).ready(function() {
 						results += ', ' + json.genres[i].name;
 					}
 				}
-				results += '</p>';
+				results += '</p></div>';
 
 
 				$("#results").html(results);

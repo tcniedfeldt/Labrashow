@@ -1,0 +1,18 @@
+.results {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+/*
+  background-color:
+*/
+}
+
+.poster_image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
