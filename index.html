@@ -7,15 +7,20 @@
 
     <!--The styles.css sheet would not load on the server no matter what we tried-->
     <style>
+      body {
+        background: #282828;
+        color: #FFFFFF;
+        font-family: "Impact", Charcoal, sans-serif;
+      }
+
       .results {
         display: grid;
         grid-column-gap: 50px;
         grid-template-columns: auto auto;
-        /*
-        background-color:
-        */
-	margin-bottom: 25%;
-	margin-top: 10%;
+        background-color: #800000;
+	margin-bottom: 5%;
+	margin-top: 5%;
+        padding: 3%;
       }
 
       img {
@@ -32,6 +37,11 @@
         grid-column-end: 3;
         text-align: left;
       }
+
+      .gitHubLink {
+        background-color: #800000;
+        padding: 3%;
+      }
     </style>
 
   </head>
@@ -46,14 +56,18 @@
 
     <center>
     <div id="movieAPI" class="movieAPI">
-      <h2>Movie Database API</h2>
+      <p>Need help choosing a movie?</p>
+      <p>Let us give you a recommendation!</p>
       <form>
-        <label>Generate</label>
+        <label>Recommend A Movie</label>
         <!--<input id="movieText" type="text"></input>-->
         <input id="movieSubmit" type="submit" value="Submit"></input>
       </form>
       <br/>
       <div id="results" class="results"></div>
+      <div id="remarks" class="remarks">
+        <h2>ENJOY THE SHOW!</h2>
+      </div>
     </div>
     </center>
 
