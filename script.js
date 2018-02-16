@@ -12,8 +12,8 @@ $(document).ready(function() {
                                 console.log(json);
 
 				var results = "";
-				results += '<h3>' + json.title + '</h3>';
 				results += '<img src="https://image.tmdb.org/t/p/w154' + json.poster_path + '"/>';
+				results += '<h3>' + json.title + '</h3>';
 				results += '<p>' + json.tagline + '</p>';
 				//overview
 				//rating
