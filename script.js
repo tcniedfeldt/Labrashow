@@ -15,7 +15,7 @@ $(document).ready(function() {
 				results += "<h3>" + json.title + "</h3>";
 				results += '<img src="' + json.poster_path + '"/>';
 
-				$("#results").html();
+				$("#results").html(results);
                         }
                 });
         });
