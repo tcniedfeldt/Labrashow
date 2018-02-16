@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 				var results = "";
 				results += '<h3>' + json.title + '</h3>';
-				results += '<img src="https://image.tmdb.org/t/p/w150' + json.poster_path + '"/>';
+				results += '<img src="https://image.tmdb.org/t/p/w154' + json.poster_path + '"/>';
 				results += '<p>' + json.tagline + '</p>';
 				//overview
 				//rating
